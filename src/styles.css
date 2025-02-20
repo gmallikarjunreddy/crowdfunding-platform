@@ -1,0 +1,239 @@
+:root {
+    --primary-color: #007bff; /* Bootstrap primary color */
+    --secondary-color: #6c757d; /* Bootstrap secondary color */
+    --success-color: #28a745; /* Success color */
+    --light-bg: #f8f9fa; /* Light background */
+    --dark-bg: #000; /* Black background */
+    --text-color: #fff; /* White text */
+    --heading-color: #28a745; /* Green color for headings */
+    --premium-gold: #FFD700; /* Gold color for accents */
+    --premium-dark: #2C2C2C; /* Darker background for premium feel */
+    --background-color: #ffffff; /* Light mode background */
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace; /* Apply the Courier New font */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 16px; /* Base font size */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.container {
+    max-width: 1200px; /* Center the content */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Add padding */
+}
+
+.header, .footer {
+    background-color: #343a40; /* Dark background for header and footer */
+    color: var(--text-color);
+    padding: 20px 0; /* Padding for header and footer */
+    text-align: center; /* Center text */
+}
+
+h1, h2, h3 {
+    color: var(--heading-color); /* Green color for headings */
+}
+
+h1 {
+    font-size: 3rem; /* Larger font size for the hero title */
+    font-weight: bold;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+h2 {
+    font-size: 2rem; /* Increase size for better visibility */
+    font-weight: bold;
+    margin-top: 20px; /* Space above the heading */
+}
+
+p {
+    color: var(--text-color); /* White text for paragraphs */
+    font-size: 1.1rem; /* Slightly larger for better readability */
+    line-height: 1.6; /* Improve readability */
+}
+
+.campaign-card {
+    background: white;
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    transition: transform 0.2s; /* Add transition for hover effect */
+}
+
+.campaign-card:hover {
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+.campaign-card h2 {
+    margin: 0;
+    color: var(--primary-color); /* Use primary color for titles */
+}
+
+.campaign-card button {
+    background-color: var(--success-color);
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Add padding for better touch targets */
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+}
+
+.campaign-card button:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.campaign-card img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 5px; /* Match card border radius */
+    border-top-right-radius: 5px; /* Match card border radius */
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .campaign-card {
+        margin: 10px 0; /* Adjust margins for smaller screens */
+    }
+
+    .campaign-card button {
+        width: 100%; /* Make buttons full width on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5rem; /* Smaller font size for mobile */
+    }
+
+    .campaign-card {
+        margin: 5px; /* Reduce margin on extra small screens */
+    }
+}
+
+.btn {
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 20px; /* Add padding for better touch targets */
+}
+
+.btn-primary {
+    background-color: var(--primary-color); /* Bootstrap primary color */
+    border: none; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section h1, .hero-section p {
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+}
+
+.card {
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth scaling effect */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+    background-color: #333; /* Dark background for cards */
+    color: var(--text-color); /* White text for cards */
+}
+
+.home-container {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #000, #333); /* Gradient background */
+    color: var(--text-color); /* White text */
+}
+
+.home-header {
+    background-color: var(--primary-color); /* Bootstrap primary color for header */
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+.home-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.home-header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+.features {
+    margin: 20px 0;
+}
+
+.feature {
+    margin: 20px 0; /* Space between feature sections */
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: var(--heading-color); /* Green color for feature titles */
+    margin-bottom: 10px; /* Space below feature titles */
+}
+
+.how-it-works {
+    margin: 20px 0;
+}
+
+.how-it-works ol {
+    text-align: left;
+    display: inline-block;
+    margin: 20px 0; /* Space around the ordered list */
+}
+
+.featured-campaigns {
+    margin: 20px 0;
+}
+
+.home-footer {
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #777; /* Lighter color for footer text */
+}
+
+.dark-mode {
+    --background-color: #121212; /* Dark mode background */
+    --text-color: #ffffff; /* Dark mode text color */
+}
+
+/* Add styles for the toggle button */
+.dark-mode-toggle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.dark-mode-toggle:hover {
+    background-color: #0056b3;
+}

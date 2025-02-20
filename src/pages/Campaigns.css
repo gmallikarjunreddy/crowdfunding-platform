@@ -1,0 +1,68 @@
+/* src/pages/Campaigns.css */
+.campaigns-container {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--dark-bg); /* Optional: Background color */
+    color: var(--text-color); /* Optional: Text color */
+}
+
+.campaigns-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.campaigns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Space between cards */
+}
+
+.loading {
+    font-size: 1.5rem;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+.error {
+    font-size: 1.5rem;
+    color: red; /* Error color */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+}
+
+.col-md-4 {
+    flex: 1 1 300px; /* Allow cards to grow and shrink, with a minimum width */
+    margin: 10px; /* Space between campaign cards */
+}
+
+.campaigns {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.campaign-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between campaign cards */
+}
+
+.campaign-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    height: 100%; /* Make all cards the same height */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: space-between; /* Space out elements */
+}
+
+.campaign-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+} 

@@ -1,0 +1,56 @@
+/* src/components/Navbar.css */
+.navbar {
+    padding: 1rem;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Increase font size */
+    font-weight: bold; /* Make the brand name bold */
+    color: #ffcc00; /* Yellow color for the brand */
+}
+
+.nav-link {
+    color: #007bff; /* Bootstrap primary color */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Darker shade on hover */
+}
+
+.dropdown-item {
+    color: #343a40; /* Dark color for dropdown items */
+}
+
+.dropdown-item:hover {
+    background-color: #6f42c1; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1); /* Light border for the toggler */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Custom icon for the toggler */
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important; /* Add a subtle shadow */
+}
+
+/* Mobile-first styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem; /* Reduce padding on mobile */
+    }
+
+    .navbar-brand {
+        font-size: 1.25rem; /* Slightly smaller brand name on mobile */
+    }
+
+    .nav-link {
+        font-size: 0.9rem; /* Smaller font size for links on mobile */
+    }
+} 

@@ -1,0 +1,159 @@
+body {
+    background-color: #f0f2f5; /* Light gray background for the entire page */
+}
+
+.home-container {
+    padding: 40px; /* Increased padding for a more spacious layout */
+    text-align: center;
+    background-color: #fdffe2; /* Light background for a clean look */
+    color: #333; /* Dark text for better readability */
+}
+
+.home-header {
+    background-color: #f5ff68; /* Bootstrap primary color for header */
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+}
+
+.home-header h1 {
+    font-size: 2.8rem; /* Increased font size for prominence */
+    margin-bottom: 15px;
+    color: #244163; /* White text for header */
+}
+
+.home-header p {
+    font-size: 1.3rem;
+    color: #664848; /* Lighter text for contrast */
+}
+
+.features {
+    margin: 20px 0;
+}
+
+.carousel-item {
+    padding: 20px; /* Add padding for better spacing */
+    text-align: center; /* Center text in steps */
+}
+
+.feature {
+    text-align: center; /* Center text in features */
+}
+
+.feature h3 {
+    font-size: 1.5rem;
+    color: var(--heading-color); /* Green color for feature titles */
+}
+
+.how-it-works {
+    margin: 20px 0;
+}
+
+.how-it-works ol {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove padding */
+}
+
+.how-it-works li {
+    font-size: 1.5rem; /* Increase font size for better readability */
+    margin: 10px 0; /* Add margin for spacing */
+}
+
+.featured-campaigns {
+    margin: 30px 0;
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling and shadow effect */
+    background-color: #fff; /* White background for cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.card-title {
+    color: var(--heading-color); /* Green color for card titles */
+}
+
+.home-footer {
+    margin-top: 50px;
+    font-size: 1rem;
+    color: #777; /* Lighter color for footer text */
+    padding: 20px 0; /* Added padding for footer */
+    background-color: #f1f1f1; /* Light background for footer */
+    border-top: 1px solid #ddd; /* Subtle border on top of footer */
+}
+
+.home-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.home-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px; /* Space below the subtitle */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards */
+}
+
+.col-md-4 {
+    flex: 1 1 300px; /* Allow cards to grow and shrink, with a minimum width */
+    margin: 10px; /* Space between campaign cards */
+}
+
+@media (max-width: 768px) {
+    .home-header {
+        padding: 30px; /* Reduce padding on smaller screens */
+    }
+
+    .home-header h1 {
+        font-size: 2rem; /* Smaller font size for header on medium screens */
+    }
+
+    .home-header p {
+        font-size: 1.1rem; /* Smaller font size for paragraph */
+    }
+
+    .feature h3 {
+        font-size: 1.2rem; /* Smaller font size for feature titles */
+    }
+
+    .how-it-works li {
+        font-size: 1.2rem; /* Smaller font size for list items */
+    }
+
+    .card {
+        margin: 10px 0; /* Add margin for cards on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .home-header {
+        padding: 20px; /* Further reduce padding on extra small screens */
+    }
+
+    .home-header h1 {
+        font-size: 1.5rem; /* Even smaller font size for header on small screens */
+    }
+
+    .home-header p {
+        font-size: 1rem; /* Smaller font size for paragraph */
+    }
+
+    .how-it-works li {
+        font-size: 1rem; /* Smaller font size for list items */
+    }
+
+    .feature {
+        margin-bottom: 20px; /* Add margin for features on smaller screens */
+    }
+} 

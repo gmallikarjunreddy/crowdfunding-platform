@@ -1,0 +1,104 @@
+/* src/pages/CreateCampaign.css */
+.create-campaign-container {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--dark-bg); /* Black background */
+    color: var(--text-color); /* White text */
+}
+
+.create-campaign-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Space below labels */
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+textarea {
+    height: 100px; /* Set height for textarea */
+}
+
+button {
+    margin-top: 10px; /* Space above button */
+}
+
+.create-campaign {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.create-campaign h1 {
+    text-align: center;
+}
+
+.create-campaign form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-campaign label {
+    margin-bottom: 5px;
+}
+
+.create-campaign input,
+.create-campaign textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.create-campaign button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.create-campaign button:hover {
+    background-color: #0056b3;
+}
+
+.message {
+    margin-top: 10px;
+    color: green;
+    text-align: center;
+}
+
+.preview {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+}
+
+.preview h2 {
+    text-align: center;
+}
+
+.preview-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+} 
