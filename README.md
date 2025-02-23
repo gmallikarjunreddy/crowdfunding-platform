@@ -20,7 +20,7 @@ Currently, two official plugins are available:
 To get started with this project, clone the repository and install the dependencies:
 
 ```bash
-git clone /c:/Users/acer/OneDrive/Desktop/icfaitech/crowdfunding-platform
+git clone /  /
 cd crowdfunding-platform
 npm install
 ```
